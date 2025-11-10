@@ -69,5 +69,25 @@ namespace BTL_WindowsForm.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f628eaf7_c142_4f8b_af62_95510564012f {
+            get {
+                object obj = ResourceManager.GetObject("f628eaf7-c142-4f8b-af62-95510564012f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f628eaf7_c142_4f8b_af62_95510564012f1 {
+            get {
+                object obj = ResourceManager.GetObject("f628eaf7-c142-4f8b-af62-95510564012f1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
