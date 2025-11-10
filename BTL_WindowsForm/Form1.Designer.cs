@@ -31,13 +31,15 @@
             this.pnlCha = new Sunny.UI.UIPanel();
             this.pnlLogin = new Sunny.UI.UIPanel();
             this.pnlLogo = new Sunny.UI.UIPanel();
+            this.lblLogin = new Sunny.UI.UILabel();
+            this.lblPassword = new Sunny.UI.UILabel();
             this.pnlCha.SuspendLayout();
+            this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlCha
             // 
             this.pnlCha.BackColor = System.Drawing.Color.White;
-            this.pnlCha.Controls.Add(this.pnlLogin);
             this.pnlCha.Controls.Add(this.pnlLogo);
             this.pnlCha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.pnlCha.Location = new System.Drawing.Point(87, 57);
@@ -52,14 +54,15 @@
             // 
             // pnlLogin
             // 
+            this.pnlLogin.Controls.Add(this.lblPassword);
+            this.pnlLogin.Controls.Add(this.lblLogin);
             this.pnlLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.pnlLogin.Location = new System.Drawing.Point(516, 10);
+            this.pnlLogin.Location = new System.Drawing.Point(609, 57);
             this.pnlLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(539, 539);
             this.pnlLogin.TabIndex = 1;
-            this.pnlLogin.Text = "Login";
             this.pnlLogin.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.pnlLogin.Click += new System.EventHandler(this.pnlLogin_Click);
             // 
@@ -78,6 +81,26 @@
             this.pnlLogo.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.pnlLogo.Click += new System.EventHandler(this.pnlLogo_Click);
             // 
+            // lblLogin
+            // 
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.lblLogin.Location = new System.Drawing.Point(12, 46);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(120, 49);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Tài khoản: ";
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.lblPassword.Location = new System.Drawing.Point(12, 165);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(120, 23);
+            this.lblPassword.TabIndex = 1;
+            this.lblPassword.Text = "Mật khẩu: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -85,12 +108,14 @@
             this.BackgroundImage = global::BTL_WindowsForm.Properties.Resources._1c98ed2d_448b_4997_8f7e_571bfbb62bde;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlCha);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlCha.ResumeLayout(false);
+            this.pnlLogin.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -100,6 +125,8 @@
         private Sunny.UI.UIPanel pnlCha;
         private Sunny.UI.UIPanel pnlLogo;
         private Sunny.UI.UIPanel pnlLogin;
+        private Sunny.UI.UILabel lblPassword;
+        private Sunny.UI.UILabel lblLogin;
     }
 }
 
