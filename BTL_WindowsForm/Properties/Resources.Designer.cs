@@ -99,5 +99,15 @@ namespace BTL_WindowsForm.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password_icon_symbol_design_illustration_vector {
+            get {
+                object obj = ResourceManager.GetObject("password-icon-symbol-design-illustration-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

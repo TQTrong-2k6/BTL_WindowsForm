@@ -35,6 +35,7 @@
             this.btnLogin = new Sunny.UI.UIButton();
             this.btnOut = new Sunny.UI.UIButton();
             this.pnlLogo = new Sunny.UI.UIPanel();
+            this.lblLogin = new Sunny.UI.UILabel();
             this.pnlCha.SuspendLayout();
             this.pnlLogin.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             this.pnlLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlLogin.Controls.Add(this.lblLogin);
             this.pnlLogin.Controls.Add(this.txtPassWord);
             this.pnlLogin.Controls.Add(this.txtLogin);
             this.pnlLogin.Controls.Add(this.btnLogin);
@@ -80,7 +82,8 @@
             // 
             this.txtPassWord.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassWord.Location = new System.Drawing.Point(113, 196);
+            this.txtPassWord.Icon = global::BTL_WindowsForm.Properties.Resources.password_icon_symbol_design_illustration_vector;
+            this.txtPassWord.Location = new System.Drawing.Point(181, 289);
             this.txtPassWord.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassWord.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtPassWord.Name = "txtPassWord";
@@ -99,7 +102,7 @@
             this.txtLogin.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.Icon = global::BTL_WindowsForm.Properties.Resources.images;
-            this.txtLogin.Location = new System.Drawing.Point(113, 117);
+            this.txtLogin.Location = new System.Drawing.Point(181, 181);
             this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLogin.MinimumSize = new System.Drawing.Size(1, 16);
             this.txtLogin.Name = "txtLogin";
@@ -131,7 +134,7 @@
             // 
             this.btnOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.Location = new System.Drawing.Point(367, 418);
+            this.btnOut.Location = new System.Drawing.Point(309, 350);
             this.btnOut.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnOut.Name = "btnOut";
             this.btnOut.Radius = 15;
@@ -159,13 +162,25 @@
             this.pnlLogo.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.pnlLogo.Click += new System.EventHandler(this.pnlLogo_Click);
             // 
+            // lblLogin
+            // 
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.lblLogin.Location = new System.Drawing.Point(175, 61);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(257, 61);
+            this.lblLogin.TabIndex = 6;
+            this.lblLogin.Text = "Đăng nhập";
+            this.lblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BTL_WindowsForm.Properties.Resources._1c98ed2d_448b_4997_8f7e_571bfbb62bde;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1902, 1055);
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.pnlCha);
             this.DoubleBuffered = true;
             this.Name = "Login";
@@ -187,6 +202,7 @@
         private Sunny.UI.UIButton btnOut;
         private Sunny.UI.UITextBox txtPassWord;
         private Sunny.UI.UITextBox txtLogin;
+        private Sunny.UI.UILabel lblLogin;
     }
 }
 

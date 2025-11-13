@@ -128,5 +128,8 @@
   <ItemGroup>
     <None Include="Resources\images1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password-icon-symbol-design-illustration-vector.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

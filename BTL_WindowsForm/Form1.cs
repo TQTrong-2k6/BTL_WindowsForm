@@ -37,16 +37,27 @@ namespace BTL_WindowsForm
             // đặt vị trí của panel cha ở giữa giao diện
             pnlCha.Location = new Point((this.ClientSize.Width - pnlCha.Width) / 2, (this.ClientSize.Height - pnlCha.Height) / 2);
 
-            int widthPnlLogin = pnlLogin.Width;// lấy chiều rộng của panel login
-            int heightPnlLogin = pnlLogin.Height;// lấy chiều cao của panel login
+            //set location của lblLogin
+            lblLogin.Location = new Point((pnlLogin.Width - lblLogin.Width) / 2, 60);
 
             int widthTXT = txtLogin.Width + 100;// tính chiều rộng của textbox login và password
 
             txtLogin.Size = new Size(widthTXT, txtLogin.Height);
-            txtLogin.Location = new Point((pnlLogin.Width - txtLogin.Width) / 2, pnlLogin.Height / 4);
+            txtLogin.Location = new Point((pnlLogin.Width - txtLogin.Width) / 2, pnlLogin.Height / 4 + 50);
 
-            txtPassWord.Size = new Size(widthTXT, txtPassWord.Height);
+            txtPassWord.Size = new Size(widthTXT, txtPassWord.Height);// set size của textbox password
+            // set location của textbox password
             txtPassWord.Location = new Point((pnlLogin.Width - txtPassWord.Width) / 2, txtLogin.Location.Y + txtLogin.Height + 20);
+
+            //set location của button Thoát
+            btnOut.Location = new Point(
+            txtPassWord.Location.X + txtPassWord.Width - btnOut.Width,
+            txtPassWord.Location.Y + txtPassWord.Height + 60);
+
+            //set location của button Đăng nhập
+            btnLogin.Location = new Point(
+            txtPassWord.Location.X + txtPassWord.Width - btnOut.Width - btnLogin.Width - 20,
+            txtPassWord.Location.Y + txtPassWord.Height + 60);
             this.ResumeLayout();
         }
         private void pnlLogin_Click(object sender, EventArgs e)
@@ -75,6 +86,11 @@ namespace BTL_WindowsForm
         }
 
         private void txtPassWord_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLogin_Click(object sender, EventArgs e)
         {
 
         }
